@@ -1,0 +1,3 @@
+# Python project files
+*.pyc
+__pycache__
