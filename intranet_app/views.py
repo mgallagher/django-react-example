@@ -6,5 +6,5 @@ def index(request):
 	return render(request, 'index.html')
 
 
-def get_some_data(request):
+def get_data(request):
     return JsonResponse({'data': [1, 2, 3]})
