@@ -1,5 +1,4 @@
 {% load static %}
-<script src="{% static 'js/test.js' %}"></script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +12,9 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <p>A React app should render below this</p>
     <div id="root"></div>
+    <script src="{% static 'js/bundle.js' %}"></script>
     <!--
     <script src="bundle.js"></script>
       This HTML file is a template.
