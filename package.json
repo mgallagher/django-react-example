@@ -8,6 +8,7 @@
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
+    "@storybook/react": "^3.3.14",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
@@ -18,9 +19,14 @@
   },
   "scripts": {
     "start": "webpack-dev-server --progress --colors --config ./webpack.config.js",
-    "webpack": "webpack --watch --config ./webpack.config.js"
+    "webpack": "webpack --watch --config ./webpack.config.js",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "babel": {
-    "presets": ["env", "react", "stage-2"]
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
   }
 }
