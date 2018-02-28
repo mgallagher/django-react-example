@@ -30,9 +30,8 @@ module.exports = {
     filename: '[name]',
     // path: path.resolve('./dist'),
     path: __dirname,
-    publicPath: 'http://localhost:3000/assets/bundles/'
   },
   devServer: {
-    contentBase: '.intranet_app/js/'
+    port: 9000
   }
 };

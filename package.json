@@ -21,10 +21,6 @@
     "webpack": "webpack --watch --config ./webpack.config.js"
   },
   "babel": {
-    "presets": [
-      "env",
-      "react",
-      "stage-2"
-    ]
+    "presets": ["env", "react", "stage-2"]
   }
 }

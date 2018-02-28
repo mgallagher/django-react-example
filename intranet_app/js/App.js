@@ -5,33 +5,36 @@ import { Button } from 'Components/Button';
 import { Divider } from 'Components/Divider';
 
 class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            counter: 0
-        };
-    }
-
-    incrementCounter = () => {
-        this.setState({ counter: this.state.counter + 1 });
+  constructor(props) {
+    super(props);
+    this.state = {
+      counter: 0
     };
+  }
 
-    resetCounter = () => {
-        this.setState({ counter: 0 });
-    };
+  incrementCounter = () => {
+    this.setState({ counter: this.state.counter + 1 });
+  };
 
-    render() {
-        return (
-            <div>
-                <h2>{this.props.title}</h2>
-                <Button title="Increment" onClickHandler={this.incrementCounter} />
-                <Button title="Reset" onClickHandler={this.resetCounter} />
-                <Divider width={3} color="lightgrey" />
-                <h1>{this.state.counter}</h1>
-                <Divider width={3} color="lightblue" />
-            </div>
-        );
-    }
+  resetCounter = () => {
+    this.setState({ counter: 0 });
+  };
+
+  render() {
+    return (
+      <div>
+        <h2>{this.props.title}</h2>
+        <Button title="Increment" onClickHandler={this.incrementCounter} />
+        <Button title="Reset" onClickHandler={this.resetCounter} />
+        <Divider width={3} color="lightgrey" />
+        <h1>{this.state.counter}</h1>
+        <Divider width={3} color="lightblue" />
+      </div>
+    );
+  }
 }
 
-ReactDOM.render(<App title="Wow React" />, document.getElementById('root'));
+ReactDOM.render(
+  <App title="Wow React!" />,
+  document.getElementById('root')
+);
