@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import styled from 'styled-components';
 
 import { Button } from 'Components/Button';
 import { Divider } from 'Components/Divider';
+
+const Wrapper = styled.div`
+  font-family: helvetica;
+  padding: 5px;
+`;
 
 class App extends React.Component {
   constructor(props) {
@@ -22,14 +28,14 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <Wrapper>
         <h2>{this.props.title}</h2>
         <Button title="Increment" onClickHandler={this.incrementCounter} />
         <Button title="Reset" onClickHandler={this.resetCounter} />
         <Divider width={3} color="lightgrey" />
         <h1>{this.state.counter}</h1>
         <Divider width={3} color="lightblue" />
-      </div>
+      </Wrapper>
     );
   }
 }
