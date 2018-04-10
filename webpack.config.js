@@ -32,10 +32,13 @@ module.exports = {
     path: __dirname,
   },
   devServer: {
-    port: 9000
+    port: 9000,
+    host: "0.0.0.0",
+    overlay: true,
+    disableHostCheck: true
   },
   performance: {
     hints: false,
   },
-  devtool: 'cheap-module-eval-source-map'
+  devtool: 'cheap-module-source-map'
 };

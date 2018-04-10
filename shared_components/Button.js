@@ -8,16 +8,23 @@ export const StyledButton = styled.button`
   font-size: 16px;
   padding: 10px 24px;
   transition-duration: 0.4s;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  margin: 5px;
 
   &:hover {
     background-color: #33a2c6;
   }
 `;
 
-export const Button = ({ onClickHandler, title, style }) => {
+const Button = ({ onClickHandler, title, style }) => {
   return (
     <StyledButton onClick={onClickHandler} style={style}>
       {title}
     </StyledButton>
   );
 };
+
+export default Button;

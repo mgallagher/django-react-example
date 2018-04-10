@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
-import { Button } from 'Components/Button';
+import Button from 'Components/Button';
 import { Divider } from 'Components/Divider';
 
 const Wrapper = styled.div`
@@ -29,7 +29,7 @@ class App extends React.Component {
   render() {
     return (
       <Wrapper>
-        <h2>{this.props.title}</h2>
+        <h1>{this.props.title}</h1>
         <Button title="Increment" onClickHandler={this.incrementCounter} />
         <Button title="Reset" onClickHandler={this.resetCounter} />
         <Divider width={3} color="lightgrey" />
