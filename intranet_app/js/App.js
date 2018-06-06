@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
+import './test.css';
 
 import Button from 'Components/Button';
 import { Divider } from 'Components/Divider';
@@ -30,6 +31,7 @@ class App extends React.Component {
     return (
       <Wrapper>
         <h1>{this.props.title}</h1>
+        <h2 className="make_red">Neat</h2>
         <Button title="Increment" onClickHandler={this.incrementCounter} />
         <Button title="Reset" onClickHandler={this.resetCounter} />
         <Divider width={3} color="lightgrey" />
