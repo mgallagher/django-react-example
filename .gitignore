@@ -4,3 +4,4 @@ __pycache__
 
 # JavaScript
 node_modules
+bundle.js.map
